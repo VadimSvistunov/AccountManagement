@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: "accountmanagment"
+      POSTGRES_USER: "accountmanagment"
+      POSTGRES_PASSWORD: "accountmanagment"
+    ports:
+      - "5433:5432"
