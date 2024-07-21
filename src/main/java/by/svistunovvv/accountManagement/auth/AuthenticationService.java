@@ -27,6 +27,7 @@ public class AuthenticationService {
                 .role(Role.ROLE_USER)
                 .build();
 
+        userService.save(user);
         String jwt = jwtService.generateToken(user);
         return AuthenticationResponse.builder()
                 .token(jwt)

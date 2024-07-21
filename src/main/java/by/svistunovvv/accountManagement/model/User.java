@@ -1,5 +1,6 @@
 package by.svistunovvv.accountManagement.model;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,7 +19,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "_user")
+@Table(name = "_user", indexes = @Index(name = "index_user_email", columnList = "email"))
 public class User implements UserDetails {
 
     @Id

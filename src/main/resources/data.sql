@@ -1,0 +1,5 @@
+INSERT INTO _user (id, email, password, role) VALUES (1, 'foo@foo.com', '$2a$12$zk9rK9yG7BvOaP3P31a00.pSs3wvAXMsVMkNe6bZE0DcqwSxbY76y', 'ROLE_USER')
+INSERT INTO _user (id, email, password, role) VALUES (2, 'bar@bar.com', '$2a$12$zk9rK9yG7BvOaP3P31a00.pSs3wvAXMsVMkNe6bZE0DcqwSxbY76y', 'ROLE_USER')
+INSERT INTO _user (id, email, password, role) VALUES (3, 'admin@admin.com', '$2a$12$zk9rK9yG7BvOaP3P31a00.pSs3wvAXMsVMkNe6bZE0DcqwSxbY76y', 'ROLE_ADMIN')
+INSERT INTO _account (id, user_id, amount, is_block) VALUES (1, 1, 123, false)
+INSERT INTO _account (id, user_id, amount, is_block) VALUES (2, 2, 421, true)

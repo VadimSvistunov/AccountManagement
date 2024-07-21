@@ -18,7 +18,7 @@ public class Account {
     @Id
     @GeneratedValue
     private Long id;
-    private double amount;
+    private Double amount;
     @ManyToOne
     @JoinColumn(name= "user_id", nullable = false)
     private User user;

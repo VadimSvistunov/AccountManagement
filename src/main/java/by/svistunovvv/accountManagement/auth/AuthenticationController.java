@@ -26,7 +26,7 @@ public class AuthenticationController {
     ) {
         AuthenticationResponse response = service.register(request);
         Account account = Account.builder()
-                .amount(0)
+                .amount(Double.valueOf(0))
                 .user(userService.findByEmail(request.getEmail()))
                 .build();
         accountService.save(account);
