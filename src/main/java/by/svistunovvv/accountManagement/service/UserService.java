@@ -12,7 +12,10 @@ import java.util.Optional;
 public class UserService {
     private final UserRepository userRepository;
 
-    User findByEmail (String email) {
+    public User findByEmail (String email) {
         return userRepository.findUserByEmail(email).orElse(null);
+    }
+    public User save (User user) {
+        return userRepository.save(user);
     }
 }
